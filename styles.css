@@ -256,25 +256,109 @@ section{
     color: var(--main-color);
 }
 
-.reviews{
+.pastries{
+    background-color: var(--bg-color);
+}
+
+.pastries-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    margin-top: 10rem;
+    gap: 3rem;
+}
+
+.pastries-container .pastries-box{
+    position: relative;
+    border-radius: 2rem;
+    height: 450px;
+    border: 2px solid var(--main-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.pastries-box img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+    object-fit: cover;
+}
+
+.pastries-box:hover img{
+    transform: scale(1.05);
+}
+
+.pastries-box .pastries-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.pastries-box .pastries-info:hover{
+    background: radial-gradient(rgba(0,0,0,0.4),
+    var(--main-color));
+    transform: scale(1.05);
+}
+
+.pastries-info h4{
+    font-size: 3rem;
+    color: white;
+    font-weight: 800;
+}
+
+.pastries-info p{
+    font-size: 1.6rem;
+    margin: 0.3rem 0 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.pastries-info a{
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: black;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+}
+
+.pastries-info a i{
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.readings{
     background-color: var(--bg-color);   
 }
 
-.reviews h2{
+.readings h2{
     margin-bottom: 10rem;
 }
-.reviews-container{
+.readings-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     margin-top: 8rem;
     gap: 2rem;
 }
 
-.reviews-container .reviews-box{
+.readings-container .readings-box {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     height: 500px;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -284,24 +368,26 @@ section{
     transition: 0.4s ease;
 }
 
-.reviews-container .reviews-box:hover{
+.readings-container .readings-box:hover{
     border-color: var(--main-color);
     transform: scale(1.02);
     background-color: white;
     color: black;
 }
 
-.reviews-box i{
+.readings-box i {
     font-size: 7rem;
     color: var(--main-color);
+    margin-bottom: 1rem; 
 }
 
-.reviews-box h3{
+.readings-box h3 {
     font-size: 2.6rem;
+    margin-top: 0; 
 }
 
-.reviews-box p{
-    font-size: 1.6rem;
+.readings-box p {
+    font-size: 1.5rem;
     margin: 1rem 0 3rem;
 }
 
@@ -318,25 +404,25 @@ section{
     width: 50px;
 }
 
-.contact{
+.apply{
     background-color: var(--bg-color);
 }
-.contact h2{
+.apply h2{
     margin-bottom: 3rem;
 }
-.contact form{
+.apply form{
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
 }
-.contact form .input-box{
+.apply form .input-box{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.contact form .input-box input,
-.contact form textarea{
+.apply form .input-box input,
+.apply form textarea{
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
@@ -348,9 +434,36 @@ section{
     resize: none;
 }
 
-.contact form .btn{
+.apply form .btn{
     margin-top: 2rem;
 }
+
+.apply form .input-box.additional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.apply form .input-box.additional-info label {
+    margin-bottom: 0.5rem; 
+    font-size: 1.6rem;
+    opacity: 0.3;
+}
+
+.apply form .input-box.additional-info select,
+.apply form .input-box.additional-info input[type="file"] {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: white;
+    background: var(--bg-color);
+    border-radius: 0.8rem;
+    border: 2px solid var(--main-color);
+    margin: 1rem 0;
+    resize: none;
+}
+
+
 
 .footer{
     position: relative;
@@ -411,11 +524,20 @@ section{
     color: white;
 }
 
+.footer .contact{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+
+
 @media(max-width:1200px){
     html{
         font-size: 55%;
     }
-    .reviews-container{
+    .readings-container{
         padding-bottom: 7rem;
         grid-template-columns: repeat(1,1fr);
         margin: 0 5 rem;
@@ -429,6 +551,9 @@ section{
         padding: 10rem 3% 2rem;
     }
     .coffees{
+        padding-bottom: 7rem;
+    }
+    .pastries{
         padding-bottom: 7rem;
     }
     .footer{
@@ -473,13 +598,20 @@ section{
     .coffees h2{
         margin-bottom: 3rem;
     }
-    .reviews h2{
+    .pastries h2{
+        margin-bottom: 3rem;
+    }
+    .readings h2{
         margin-bottom: 3rem;
     }
     .coffees-container{
         grid-template-columns: repeat(1,1fr);
     }
-    .reviews-container{
+    .pastries-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .readings-container{
         grid-template-columns: repeat(2,1fr);
     }
 }
