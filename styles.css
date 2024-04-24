@@ -345,7 +345,7 @@ section{
 }
 
 .readings h2{
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
 }
 .readings-container{
     display: grid;
@@ -359,7 +359,6 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 500px;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -387,7 +386,7 @@ section{
 }
 
 .readings-box p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 1rem 0 3rem;
 }
 
