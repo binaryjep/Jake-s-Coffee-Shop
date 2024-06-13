@@ -1,297 +1,241 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jake's Coffee Shop</title>
-    <link rel = "stylesheet" href="styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jake's Coffee Shop</title>
+        <link rel = "stylesheet" href="styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
 
-    <header class="header">
-        <a href="#home" class="logo">
-            Jake's<span> Cafe</span>
-        </a>
+        <header class="header">
+            <a href="#home" class="logo">
+                Jake's<span> Cafe</span>
+            </a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-menu' id="menu-icon"></i>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#coffees">Menu</a>
-            <a href="#readings">Music</a>
-            <a href="#apply">Job</a>
-        </nav>
-    </header>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#coffees">Menu</a>
+                <a href="#apply">Job</a>
+            </nav>
+        </header>
 
-    <section class="home" id="home">
+        <section class="home" id="home">
 
-        <div class="home-content">
-            <h3>Welcome to</h3>
-            <h1>Jake's<span>Cafe</span></h1>
-            <p>Come in at Jake's Coffee Shop and experience your treat with music and poetry. Enjoy and select  from our wide range of coffees and pastries.</p>
+            <div class="home-content">
+                <h3>Welcome to</h3>
+                <h1>Jake's<span>Cafe</span></h1>
+                <p>Come in at Jake's Coffee Shop and experience your treat with music and poetry. Enjoy and select  from our wide range of coffees and pastries.</p>
 
-            <a href="#coffees" class="btn">Order Now</a>
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="about-content">
-            <h2 class="heading">About<span>Us</span></h2>
-            <p>Welcome to Jake's Coffee Shop, where every cup tells a story and every pastry is a delight. Nestled in the heart of Nottingham, our cozy cafe offers a haven for coffee enthusiasts and pastry lovers alike.
-                But Jake's is more than just a coffee shop; it's a community hub. Our intimate setting provides the perfect backdrop for poetry readings, live music performances, and engaging conversations. Whether you're here to savor a perfectly crafted latte, dive into a decadent pastry, or immerse yourself in the creative energy of our events, there's always something special brewing at Jake's.
-            </p>
-
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
-
-    <section class="coffees" id="coffees">
-        <h2 class="heading">Drinks</h2>
-
-        <div class="coffees-container">
-            <div class="coffees-box">
-                <img src="latte.png" alt="latte">
-                <div class="coffees-info">
-                    <h4>Latte</h4>
-                    <p><span>Price:</span> $5.00</p>
-                    <a href="#">
-                        <i class='bx bxs-coffee-alt' ></i>
-                    </a>
-                </div>
+                <a href="#coffees" class="btn">Order Now</a>
             </div>
+        </section>
 
-            <div class="coffees-box">
-                <img src="cappuccino.png" alt="cappuccino">
-                <div class="coffees-info">
-                    <h4>Cappuccino</h4>
-                    <p><span>Price:</span>$4.50</p>
-                    <a href="#">
-                        <i class='bx bxs-coffee-alt' ></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="coffees-box">
-                <img src="espresso.png" alt="espresso">
-                <div class="coffees-info">
-                    <h4>Espresso</h4>
-                    <p><span>Price:</span>$4.00</p>
-                    <a href="#">
-                        <i class='bx bxs-coffee-alt' ></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="coffees-box">
-                <img src="americano.png" alt="americano">
-                <div class="coffees-info">
-                    <h4>Americano</h4>
-                    <p><span>Price:</span>$3.50</p>
-                    <a href="#">
-                        <i class='bx bxs-coffee-alt' ></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="coffees-box">
-                <img src="tea.png" alt="green-tea">
-                <div class="coffees-info">
-                    <h4>Green Tea</h4>
-                    <p><span>Price:</span>$3.00</p>
-                    <a href="#">
-                        <i class='bx bxs-coffee-alt' ></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="pastries" id="pastries">
-        <h2 class="heading">Pastries and Sandwiches</h2>
-
-        <div class="pastries-container">
-            <div class="pastries-box">
-                <img src="bagel.png" alt="bagel">
-                <div class="pastries-info">
-                    <h4>Bagel</h4>
-                    <p>Price: $3.00</p>
-                    <a href="#">
-                        <i class='bx bxs-baguette'></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="pastries-box">
-                <img src="croissant.png" alt="croissant">
-                <div class="pastries-info">
-                    <h4>Croissant</h4>
-                    <p>Price: $3.50</p>
-                    <a href="#">
-                        <i class='bx bxs-baguette'></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="pastries-box">
-                <img src="muffin.png" alt="muffin">
-                <div class="pastries-info">
-                    <h4>Blueberry Muffin</h4>
-                    <p>Price:$4.00</p>
-                    <a href="#">
-                        <i class='bx bxs-baguette'></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="pastries-box">
-                <img src="salad.png" alt="salad">
-                <div class="pastries-info">
-                    <h4>Caesar Salad</h4>
-                    <p>Price: $4.50 </p>
-                    <a href="#">
-                        <i class='bx bxs-baguette'></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="pastries-box">
-                <img src="sandwich.png" alt="sandwich">
-                <div class="pastries-info">
-                    <h4>Clubhouse Sandwich</h4>
-                    <p>Price: $5.00 </p>
-                    <a href="#">
-                        <i class='bx bxs-baguette'></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="readings" id="readings">
-        <h2 class="heading">Music and Poetry Readings</h2>
-        <div class="readings-container">
-            <!-- Music Containers -->
-            <div class="readings-box">
-                <i class='bx bxs-music' ></i>
-                <h3>Miss Miss</h3>
-                <h2>Artist: Rob Deniel</h2>
-                <p>Genre: Pinoy Pop</p>
-                <audio controls>
-                    <source src="Rob Deniel - Miss Miss.m4a" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-    
-            <div class="readings-box">
-                <i class='bx bxs-music' ></i>
-                <h3>Para sa Akin</h3>
-                <h2>Artist: Jason Dhakal</h2>
-                <p>Genre: RNB</p>
-                <audio controls>
-                    <source src="Jason Dhakal - Para Sa Akin [Official Audio].m4a" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-    
-            <!-- Poetry Containers -->
-            <div class="readings-box">
-                <i class='bx bxs-book-open' ></i>
-                <h3>Ang Pusong Tila Bituin</h3>
-                <h2>by: Maria Aguinaldo</h2>
-                <p> Sa puso kong tila bituin sa kalawakan,
-                    Ikaw ang gabay, ilaw, at pagsilang.
-                    Sa paglalakbay ng buhay na puno ng dilim,
-                    Ika'y nagbibigay liwanag, pag-asa't himig.Kapiling ka'y walang pagod kong tinatahak,
-                    Sa bawat hakbang, yakap, at halik, ligaya'y sumisilak.
-                    Ang pag-ibig mo'y alay, walang hangganang ningning,
-                    Sa mundo kong puno ng pagkukulang, ikaw ang buong kahulugan.
+        <section class="about" id="about">
+            <div class="about-content">
+                <h2 class="heading">About<span>Us</span></h2>
+                <p>Welcome to Jake's Coffee Shop, where every cup tells a story and every pastry is a delight. Nestled in the heart of Nottingham, our cozy cafe offers a haven for coffee enthusiasts and pastry lovers alike.
+                    But Jake's is more than just a coffee shop; it's a community hub. Our intimate setting provides the perfect backdrop for poetry readings, live music performances, and engaging conversations. Whether you're here to savor a perfectly crafted latte, dive into a decadent pastry, or immerse yourself in the creative energy of our events, there's always something special brewing at Jake's.
                 </p>
+
+                <a href="#" class="btn">Read More</a>
             </div>
-    
-            <div class="readings-box">
-                <i class='bx bxs-book-open' ></i>
-                <h3>Tulay ng Kaisipan</h3>
-                <h2>by: Juanito Dela Cruz</h2>
-                <p> Sa kalungkutan at dilim ng aking isipan,
-                    Ikaw ang tanglaw, tulay, at gabay sa sandaling gabi'y maganap.
-                    Mga alon ng pangamba'y hinaharap na may tapang,
-                    Sa bawat hagupit ng unos, ika'y patuloy na matatag.Minsan ay mapag-isa, mga luhang tila ulan,
-                    Ngunit sa pagkakaibigan, pagmamahal, may pag-asa sa kabila ng dilim.
-                    Diwa't kaisipan ay inaaliw, inaangkin,
-                    Sa pagsulong ng araw, pag-asa'y nababalik, sa pagtanggap, pag-ibig, at pag-unawa'y lumilinaw.</p>
+        </section>
+
+        <section class="coffees" id="coffees">
+            <h2 class="heading">Drinks</h2>
+
+            <div class="coffees-container">
+                <div class="coffees-box">
+                    <img src="latte.png" alt="latte">
+                    <div class="coffees-info">
+                        <h4>Latte</h4>
+                        <p><span>Price:</span> $5.00</p>
+                        <a href="#">
+                            <i class='bx bxs-coffee-alt' ></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="coffees-box">
+                    <img src="cappuccino.png" alt="cappuccino">
+                    <div class="coffees-info">
+                        <h4>Cappuccino</h4>
+                        <p><span>Price:</span>$4.50</p>
+                        <a href="#">
+                            <i class='bx bxs-coffee-alt' ></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="coffees-box">
+                    <img src="espresso.png" alt="espresso">
+                    <div class="coffees-info">
+                        <h4>Espresso</h4>
+                        <p><span>Price:</span>$4.00</p>
+                        <a href="#">
+                            <i class='bx bxs-coffee-alt' ></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="coffees-box">
+                    <img src="americano.png" alt="americano">
+                    <div class="coffees-info">
+                        <h4>Americano</h4>
+                        <p><span>Price:</span>$3.50</p>
+                        <a href="#">
+                            <i class='bx bxs-coffee-alt' ></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="coffees-box">
+                    <img src="tea.png" alt="green-tea">
+                    <div class="coffees-info">
+                        <h4>Green Tea</h4>
+                        <p><span>Price:</span>$3.00</p>
+                        <a href="#">
+                            <i class='bx bxs-coffee-alt' ></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="pastries" id="pastries">
+            <h2 class="heading">Pastries and Sandwiches</h2>
+
+            <div class="pastries-container">
+                <div class="pastries-box">
+                    <img src="bagel.png" alt="bagel">
+                    <div class="pastries-info">
+                        <h4>Bagel</h4>
+                        <p>Price: $3.00</p>
+                        <a href="#">
+                            <i class='bx bxs-baguette'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pastries-box">
+                    <img src="croissant.png" alt="croissant">
+                    <div class="pastries-info">
+                        <h4>Croissant</h4>
+                        <p>Price: $3.50</p>
+                        <a href="#">
+                            <i class='bx bxs-baguette'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pastries-box">
+                    <img src="muffin.png" alt="muffin">
+                    <div class="pastries-info">
+                        <h4>Blueberry Muffin</h4>
+                        <p>Price:$4.00</p>
+                        <a href="#">
+                            <i class='bx bxs-baguette'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pastries-box">
+                    <img src="salad.png" alt="salad">
+                    <div class="pastries-info">
+                        <h4>Caesar Salad</h4>
+                        <p>Price: $4.50 </p>
+                        <a href="#">
+                            <i class='bx bxs-baguette'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pastries-box">
+                    <img src="sandwich.png" alt="sandwich">
+                    <div class="pastries-info">
+                        <h4>Clubhouse Sandwich</h4>
+                        <p>Price: $5.00 </p>
+                        <a href="#">
+                            <i class='bx bxs-baguette'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="apply" id="apply">
+        <h2 class="heading">Apply <span>Now</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+            </div>
+            
+            <div class="input-box">
+                <input type="text" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+            </div>
+            
+            <div class="input-box additional-info">
+                <select name="position" id="position" class="position" placeholder="Select Position">
+                    <option value="" disabled selected>Select Position</option>
+                    <option value="position1">Bartender</option>
+                    <option value="position2">Baker</option>
+                    <option value="position3">Cashier</option>
+                    <option value="position3">Server</option>
+                </select>
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" placeholder="Upload Resume">
+            </div>
+
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="About you"></textarea>
+            <input type="submit" value="Submit Application" class="btn">
+        </form>
     </section>
 
-    <section class="apply" id="apply">
-    <h2 class="heading">Apply <span>Now</span></h2>
+        <footer class="footer">
 
-    <form action="#">
-        <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email">
-        </div>
-        
-        <div class="input-box">
-            <input type="text" placeholder="Phone Number">
-            <input type="text" placeholder="Subject">
-        </div>
-        
-        <div class="input-box additional-info">
-            <select name="position" id="position" class="position" placeholder="Select Position">
-                <option value="" disabled selected>Select Position</option>
-                <option value="position1">Bartender</option>
-                <option value="position2">Baker</option>
-                <option value="position3">Cashier</option>
-                <option value="position3">Server</option>
-            </select>
-            <label for="resume">Upload Resume:</label>
-            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" placeholder="Upload Resume">
-        </div>
+            <div class="social">
+                <a href="#" class=""><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="#"><i class='bx bxl-tiktok' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+            </div>
+                <ul class="list">
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">apply</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
 
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="About you"></textarea>
-        <input type="submit" value="Submit Application" class="btn">
-    </form>
-</section>
+                <p class="contact">
+                    23 Pine Road Nottingham, NG1 5YU
+                    <br>
+                    0115 9324567
+                </p>
+                <p class="copyright">
+                    © 2024 Jake's Coffee Shop | All Rights Reserved.
+                </p>
+        </footer>
 
-    <footer class="footer">
-
-        <div class="social">
-            <a href="#" class=""><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
-            <a href="#"><i class='bx bxl-tiktok' ></i></a>
-            <a href="#"><i class='bx bxl-twitter' ></i></a>
-        </div>
-            <ul class="list">
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
-                <li>
-                    <a href="#">Products</a>
-                </li>
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-                <li>
-                    <a href="#">apply</a>
-                </li>
-                <li>
-                    <a href="#">Privacy Policy</a>
-                </li>
-            </ul>
-
-            <p class="contact">
-                23 Pine Road Nottingham, NG1 5YU
-                <br>
-                0115 9324567
-            </p>
-            <p class="copyright">
-                © 2024 Jake's Coffee Shop | All Rights Reserved.
-            </p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <script src="script.js"></script>
+    </body>
+    </html>

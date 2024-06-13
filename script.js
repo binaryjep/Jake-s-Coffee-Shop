@@ -28,3 +28,15 @@ function toggleMenu() {
     const navbar = document.getElementById('navbar');
     navbar.classList.toggle('active');
 }
+
+// script.js
+
+document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+});
+
